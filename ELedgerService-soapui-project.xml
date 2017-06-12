@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="04d936eb-61e9-4450-a2d4-7c1af78de86f" activeEnvironment="Default" name="ELedgerService" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="7332ab6a-dec4-4fcc-a3b3-8e8d8078cb6a" wsaVersion="NONE" name="WithHttp" type="wsdl" bindingName="{http://tempuri.org/}WithHttp" soapVersion="1_1" anonymous="optional" definition="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint></con:endpoints><con:operation id="1697cbdf-03ef-490b-ba5e-b668fdfe6a7b" isOneWay="false" action="http://tempuri.org/IELedgerService/SendEntityInformation" name="SendEntityInformation" bindingOperationName="SendEntityInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a8a1daca-4ce7-4dc0-b203-6697ba8bd92e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendEntityInformation>\r
+         <!--Optional:-->\r
+         <tem:VKN>?</tem:VKN>\r
+         <!--Optional:-->\r
+         <tem:PhoneNumberDescription>?</tem:PhoneNumberDescription>\r
+         <!--Optional:-->\r
+         <tem:PhoneNumber>?</tem:PhoneNumber>\r
+         <!--Optional:-->\r
+         <tem:EntityFaxNumber>?</tem:EntityFaxNumber>\r
+         <!--Optional:-->\r
+         <tem:EntityEmailAddress>?</tem:EntityEmailAddress>\r
+         <!--Optional:-->\r
+         <tem:OrganizationIdentifier>?</tem:OrganizationIdentifier>\r
+         <!--Optional:-->\r
+         <tem:OrganizationDescription>?</tem:OrganizationDescription>\r
+         <!--Optional:-->\r
+         <tem:BusinessDescription>?</tem:BusinessDescription>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearStart>?</tem:FiscalYearStart>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearEnd>?</tem:FiscalYearEnd>\r
+         <!--Optional:-->\r
+         <tem:OrganizationBuildingNumber>?</tem:OrganizationBuildingNumber>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressStreet>?</tem:OrganizationAddressStreet>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressStreet2>?</tem:OrganizationAddressStreet2>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressCity>?</tem:OrganizationAddressCity>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressZipOrPostalCode>?</tem:OrganizationAddressZipOrPostalCode>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressCountry>?</tem:OrganizationAddressCountry>\r
+         <!--Optional:-->\r
+         <tem:WebSiteURL>?</tem:WebSiteURL>\r
+      </tem:SendEntityInformation>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendEntityInformation"/></con:call></con:operation><con:operation id="0572a7b3-0557-44d5-893b-926dc9e8e4a6" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerDataByList" name="SendLedgerDataByList" bindingOperationName="SendLedgerDataByList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="21944727-b179-4ce8-9473-fc9aff4df3b8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerDataByList>\r
+         <!--Optional:-->\r
+         <tem:header>\r
+            <!--Zero or more repetitions:-->\r
+            <isis:AccountHeader>\r
+               <!--Optional:-->\r
+               <isis:h01>?</isis:h01>\r
+               <!--Optional:-->\r
+               <isis:h02>?</isis:h02>\r
+               <!--Optional:-->\r
+               <isis:h03>?</isis:h03>\r
+               <!--Optional:-->\r
+               <isis:h04>?</isis:h04>\r
+               <!--Optional:-->\r
+               <isis:h05>?</isis:h05>\r
+               <!--Optional:-->\r
+               <isis:h06>?</isis:h06>\r
+               <!--Optional:-->\r
+               <isis:h07>?</isis:h07>\r
+               <!--Optional:-->\r
+               <isis:h08>?</isis:h08>\r
+               <!--Optional:-->\r
+               <isis:h09>?</isis:h09>\r
+               <!--Optional:-->\r
+               <isis:h10>?</isis:h10>\r
+               <!--Optional:-->\r
+               <isis:h11>?</isis:h11>\r
+               <!--Optional:-->\r
+               <isis:h12>?</isis:h12>\r
+               <!--Optional:-->\r
+               <isis:h13>?</isis:h13>\r
+               <!--Optional:-->\r
+               <isis:h14>?</isis:h14>\r
+               <!--Optional:-->\r
+               <isis:h15>?</isis:h15>\r
+               <!--Optional:-->\r
+               <isis:h16>?</isis:h16>\r
+               <!--Optional:-->\r
+               <isis:h17>?</isis:h17>\r
+               <!--Optional:-->\r
+               <isis:h18>?</isis:h18>\r
+               <!--Optional:-->\r
+               <isis:h19>?</isis:h19>\r
+               <!--Optional:-->\r
+               <isis:h20>?</isis:h20>\r
+               <!--Optional:-->\r
+               <isis:h21>?</isis:h21>\r
+               <!--Optional:-->\r
+               <isis:h22>?</isis:h22>\r
+               <!--Optional:-->\r
+               <isis:h23>?</isis:h23>\r
+               <!--Optional:-->\r
+               <isis:h24>?</isis:h24>\r
+               <!--Optional:-->\r
+               <isis:h25>?</isis:h25>\r
+               <!--Optional:-->\r
+               <isis:h26>?</isis:h26>\r
+               <!--Optional:-->\r
+               <isis:h27>?</isis:h27>\r
+               <!--Optional:-->\r
+               <isis:h28>?</isis:h28>\r
+               <!--Optional:-->\r
+               <isis:h29>?</isis:h29>\r
+               <!--Optional:-->\r
+               <isis:h30>?</isis:h30>\r
+               <!--Optional:-->\r
+               <isis:recordPeriod>?</isis:recordPeriod>\r
+            </isis:AccountHeader>\r
+         </tem:header>\r
+         <!--Optional:-->\r
+         <tem:detail>\r
+            <!--Zero or more repetitions:-->\r
+            <isis:AccountDetail>\r
+               <!--Optional:-->\r
+               <isis:d01>?</isis:d01>\r
+               <!--Optional:-->\r
+               <isis:d02>?</isis:d02>\r
+               <!--Optional:-->\r
+               <isis:d03>?</isis:d03>\r
+               <!--Optional:-->\r
+               <isis:d04>?</isis:d04>\r
+               <!--Optional:-->\r
+               <isis:d05>?</isis:d05>\r
+               <!--Optional:-->\r
+               <isis:d06>?</isis:d06>\r
+               <!--Optional:-->\r
+               <isis:d07>?</isis:d07>\r
+               <!--Optional:-->\r
+               <isis:d08>?</isis:d08>\r
+               <!--Optional:-->\r
+               <isis:d09>?</isis:d09>\r
+               <!--Optional:-->\r
+               <isis:d10>?</isis:d10>\r
+               <!--Optional:-->\r
+               <isis:d11>?</isis:d11>\r
+               <!--Optional:-->\r
+               <isis:d12>?</isis:d12>\r
+               <!--Optional:-->\r
+               <isis:d13>?</isis:d13>\r
+               <!--Optional:-->\r
+               <isis:d14>?</isis:d14>\r
+               <!--Optional:-->\r
+               <isis:d15>?</isis:d15>\r
+               <!--Optional:-->\r
+               <isis:d16>?</isis:d16>\r
+               <!--Optional:-->\r
+               <isis:d17>?</isis:d17>\r
+               <!--Optional:-->\r
+               <isis:d18>?</isis:d18>\r
+               <!--Optional:-->\r
+               <isis:d19>?</isis:d19>\r
+               <!--Optional:-->\r
+               <isis:d20>?</isis:d20>\r
+               <!--Optional:-->\r
+               <isis:d21>?</isis:d21>\r
+               <!--Optional:-->\r
+               <isis:d22>?</isis:d22>\r
+               <!--Optional:-->\r
+               <isis:d23>?</isis:d23>\r
+               <!--Optional:-->\r
+               <isis:d24>?</isis:d24>\r
+               <!--Optional:-->\r
+               <isis:d25>?</isis:d25>\r
+               <!--Optional:-->\r
+               <isis:d26>?</isis:d26>\r
+               <!--Optional:-->\r
+               <isis:d27>?</isis:d27>\r
+               <!--Optional:-->\r
+               <isis:d28>?</isis:d28>\r
+               <!--Optional:-->\r
+               <isis:d29>?</isis:d29>\r
+               <!--Optional:-->\r
+               <isis:d30>?</isis:d30>\r
+               <!--Optional:-->\r
+               <isis:d31>?</isis:d31>\r
+               <!--Optional:-->\r
+               <isis:d32>?</isis:d32>\r
+               <!--Optional:-->\r
+               <isis:d33>?</isis:d33>\r
+               <!--Optional:-->\r
+               <isis:d34>?</isis:d34>\r
+               <!--Optional:-->\r
+               <isis:d35>?</isis:d35>\r
+               <!--Optional:-->\r
+               <isis:d36>?</isis:d36>\r
+               <!--Optional:-->\r
+               <isis:d37>?</isis:d37>\r
+               <!--Optional:-->\r
+               <isis:d38>?</isis:d38>\r
+               <!--Optional:-->\r
+               <isis:d39>?</isis:d39>\r
+               <!--Optional:-->\r
+               <isis:d40>?</isis:d40>\r
+               <!--Optional:-->\r
+               <isis:documentDate>?</isis:documentDate>\r
+               <!--Optional:-->\r
+               <isis:recordperiod>?</isis:recordperiod>\r
+            </isis:AccountDetail>\r
+         </tem:detail>\r
+         <!--Optional:-->\r
+         <tem:Period>?</tem:Period>\r
+         <!--Optional:-->\r
+         <tem:PacketCounter>?</tem:PacketCounter>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+      </tem:SendLedgerDataByList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerDataByList"/></con:call></con:operation><con:operation id="1d50f0f4-db98-4d31-8bb9-d56da84a2342" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerDataByXML" name="SendLedgerDataByXML" bindingOperationName="SendLedgerDataByXML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="952b51cb-e442-4bfe-9a44-56fca04283eb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerDataByXML>\r
+         <!--Optional:-->\r
+         <tem:header>?</tem:header>\r
+         <!--Optional:-->\r
+         <tem:detail>?</tem:detail>\r
+         <!--Optional:-->\r
+         <tem:Period>?</tem:Period>\r
+         <!--Optional:-->\r
+         <tem:PacketCounter>?</tem:PacketCounter>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+      </tem:SendLedgerDataByXML>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerDataByXML"/></con:call></con:operation><con:operation id="1679384b-18f8-4a44-bff7-445a798aa7a2" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerDataByZip" name="SendLedgerDataByZip" bindingOperationName="SendLedgerDataByZip" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="352aaa72-412a-47a0-b481-d448f2c57ab6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerDataByZip>\r
+         <!--Optional:-->\r
+         <tem:header>cid:287618522817</tem:header>\r
+         <!--Optional:-->\r
+         <tem:detail>cid:13038911615</tem:detail>\r
+         <!--Optional:-->\r
+         <tem:Period>?</tem:Period>\r
+         <!--Optional:-->\r
+         <tem:PacketCounter>?</tem:PacketCounter>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+      </tem:SendLedgerDataByZip>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerDataByZip"/></con:call></con:operation><con:operation id="e2674349-6067-4f16-b98e-3b9f83fa437e" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord" name="SendLedgerPeriodControlRecord" bindingOperationName="SendLedgerPeriodControlRecord" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fff90cc2-81f4-44cd-93ad-5dbbdec504a3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerPeriodControlRecord>\r
+         <!--Optional:-->\r
+         <tem:VKN>?</tem:VKN>\r
+         <!--Optional:-->\r
+         <tem:RecordPeriod>?</tem:RecordPeriod>\r
+         <!--Optional:-->\r
+         <tem:PeriodCoveredStart>?</tem:PeriodCoveredStart>\r
+         <!--Optional:-->\r
+         <tem:PeriodCoveredEnd>?</tem:PeriodCoveredEnd>\r
+         <!--Optional:-->\r
+         <tem:EntryCount>?</tem:EntryCount>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearStart>?</tem:FiscalYearStart>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearEnd>?</tem:FiscalYearEnd>\r
+         <!--Optional:-->\r
+         <tem:DebitSum>?</tem:DebitSum>\r
+         <!--Optional:-->\r
+         <tem:CreditSum>?</tem:CreditSum>\r
+         <!--Optional:-->\r
+         <tem:PeriodClosed>?</tem:PeriodClosed>\r
+         <!--Optional:-->\r
+         <tem:isTest>?</tem:isTest>\r
+         <!--Optional:-->\r
+         <tem:ControlType>?</tem:ControlType>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+         <!--Optional:-->\r
+         <tem:EnteredBeginDate>?</tem:EnteredBeginDate>\r
+         <!--Optional:-->\r
+         <tem:EnteredEndDate>?</tem:EnteredEndDate>\r
+      </tem:SendLedgerPeriodControlRecord>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="12d02c75-3918-491b-9062-9b4df7e8c444" wsaVersion="NONE" name="WithHttpS" type="wsdl" bindingName="{http://tempuri.org/}WithHttpS" soapVersion="1_1" anonymous="optional" definition="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?wsdl"><con:part><con:url>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ELedgerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsp:Policy wsu:Id="WithHttpS_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IELedgerService_SendLedgerDataByList_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerDataByList"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerDataByList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerDataByListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerDataByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerDataByXML"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerDataByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerDataByXMLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerDataByZip_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerDataByZip"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerDataByZip_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerDataByZipResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerPeriodControlRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerPeriodControlRecord"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendLedgerPeriodControlRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendLedgerPeriodControlRecordResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendEntityInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEntityInformation"/>
+  </wsdl:message>
+  <wsdl:message name="IELedgerService_SendEntityInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEntityInformationResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IELedgerService">
+    <wsdl:operation name="SendLedgerDataByList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerDataByList" message="tns:IELedgerService_SendLedgerDataByList_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerDataByListResponse" message="tns:IELedgerService_SendLedgerDataByList_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerDataByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerDataByXML" message="tns:IELedgerService_SendLedgerDataByXML_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerDataByXMLResponse" message="tns:IELedgerService_SendLedgerDataByXML_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerDataByZip">
+      <wsdl:input wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerDataByZip" message="tns:IELedgerService_SendLedgerDataByZip_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerDataByZipResponse" message="tns:IELedgerService_SendLedgerDataByZip_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerPeriodControlRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord" message="tns:IELedgerService_SendLedgerPeriodControlRecord_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecordResponse" message="tns:IELedgerService_SendLedgerPeriodControlRecord_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SendEntityInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IELedgerService/SendEntityInformation" message="tns:IELedgerService_SendEntityInformation_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IELedgerService/SendEntityInformationResponse" message="tns:IELedgerService_SendEntityInformation_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WithHttp" type="tns:IELedgerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SendLedgerDataByList">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerDataByList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerDataByXML">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerDataByXML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerDataByZip">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerDataByZip" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerPeriodControlRecord">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEntityInformation">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendEntityInformation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WithHttpS" type="tns:IELedgerService">
+    <wsp:PolicyReference URI="#WithHttpS_policy"/>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SendLedgerDataByList">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerDataByList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerDataByXML">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerDataByXML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerDataByZip">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerDataByZip" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLedgerPeriodControlRecord">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEntityInformation">
+      <soap:operation soapAction="http://tempuri.org/IELedgerService/SendEntityInformation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ELedgerService">
+    <wsdl:port name="WithHttp" binding="tns:WithHttp">
+      <soap:address location="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc"/>
+    </wsdl:port>
+    <wsdl:port name="WithHttpS" binding="tns:WithHttpS">
+      <soap:address location="https://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+  <xs:element name="SendLedgerDataByList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="header" nillable="true" type="q1:ArrayOfAccountHeader" xmlns:q1="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+        <xs:element minOccurs="0" name="detail" nillable="true" type="q2:ArrayOfAccountDetail" xmlns:q2="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+        <xs:element minOccurs="0" name="Period" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PacketCounter" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SapReturnTable" nillable="true" type="q3:ELedgerService.OutputType" xmlns:q3="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerDataByListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendLedgerDataByListResult" nillable="true" type="q4:ELedgerService.OutputType" xmlns:q4="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerDataByXML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="header" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="detail" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="Period" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PacketCounter" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SapReturnTable" nillable="true" type="q5:ELedgerService.OutputType" xmlns:q5="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerDataByXMLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendLedgerDataByXMLResult" nillable="true" type="q6:ELedgerService.OutputType" xmlns:q6="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerDataByZip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="header" nillable="true" type="xs:base64Binary"/>
+        <xs:element minOccurs="0" name="detail" nillable="true" type="xs:base64Binary"/>
+        <xs:element minOccurs="0" name="Period" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PacketCounter" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SapReturnTable" nillable="true" type="q7:ELedgerService.OutputType" xmlns:q7="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerDataByZipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendLedgerDataByZipResult" nillable="true" type="q8:ELedgerService.OutputType" xmlns:q8="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerPeriodControlRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VKN" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="RecordPeriod" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PeriodCoveredStart" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PeriodCoveredEnd" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="EntryCount" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="FiscalYearStart" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="FiscalYearEnd" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="DebitSum" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="CreditSum" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PeriodClosed" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="isTest" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ControlType" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SapReturnTable" nillable="true" type="q9:ELedgerService.OutputType" xmlns:q9="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+        <xs:element minOccurs="0" name="EnteredBeginDate" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="EnteredEndDate" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLedgerPeriodControlRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendLedgerPeriodControlRecordResult" nillable="true" type="q10:ELedgerService.OutputType" xmlns:q10="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEntityInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VKN" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PhoneNumberDescription" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="EntityFaxNumber" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="EntityEmailAddress" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationIdentifier" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationDescription" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="BusinessDescription" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="FiscalYearStart" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="FiscalYearEnd" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationBuildingNumber" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationAddressStreet" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationAddressStreet2" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationAddressCity" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationAddressZipOrPostalCode" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="OrganizationAddressCountry" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="WebSiteURL" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEntityInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendEntityInformationResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">
+  <xs:complexType name="ArrayOfAccountHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountHeader" nillable="true" type="tns:AccountHeader"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAccountHeader" nillable="true" type="tns:ArrayOfAccountHeader"/>
+  <xs:complexType name="AccountHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="h01" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h02" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h03" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h04" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h05" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h06" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h07" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h08" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h09" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h10" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h11" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h12" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h13" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h14" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h15" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h16" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h17" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h18" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h19" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h20" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h21" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h22" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h23" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h24" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h25" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h26" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h27" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h28" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h29" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="h30" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="recordPeriod" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountHeader" nillable="true" type="tns:AccountHeader"/>
+  <xs:complexType name="ArrayOfAccountDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountDetail" nillable="true" type="tns:AccountDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAccountDetail" nillable="true" type="tns:ArrayOfAccountDetail"/>
+  <xs:complexType name="AccountDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="d01" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d02" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d03" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d04" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d05" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d06" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d07" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d08" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d09" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d10" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d11" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d12" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d13" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d14" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d15" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d16" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d17" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d18" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d19" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d20" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d21" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d22" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d23" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d24" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d25" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d26" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d27" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d28" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d29" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d30" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d31" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d32" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d33" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d34" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d35" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d36" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d37" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d38" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d39" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="d40" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="documentDate" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="recordperiod" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountDetail" nillable="true" type="tns:AccountDetail"/>
+  <xs:complexType name="ELedgerService.OutputType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Messages" nillable="true" type="tns:ArrayOfELedgerService.MessageTableType"/>
+      <xs:element minOccurs="0" name="SesionID" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ELedgerService.OutputType" nillable="true" type="tns:ELedgerService.OutputType"/>
+  <xs:complexType name="ArrayOfELedgerService.MessageTableType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ELedgerService.MessageTableType" nillable="true" type="tns:ELedgerService.MessageTableType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfELedgerService.MessageTableType" nillable="true" type="tns:ArrayOfELedgerService.MessageTableType"/>
+  <xs:complexType name="ELedgerService.MessageTableType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MesageType" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="MessageID" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ELedgerService.MessageTableType" nillable="true" type="tns:ELedgerService.MessageTableType"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint></con:endpoints><con:operation id="4fe7e6d8-f0ce-492e-adae-78321d9c019f" isOneWay="false" action="http://tempuri.org/IELedgerService/SendEntityInformation" name="SendEntityInformation" bindingOperationName="SendEntityInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="149a56ec-2eae-4c28-b2cc-cf75f36146df" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendEntityInformation>\r
+         <!--Optional:-->\r
+         <tem:VKN>?</tem:VKN>\r
+         <!--Optional:-->\r
+         <tem:PhoneNumberDescription>?</tem:PhoneNumberDescription>\r
+         <!--Optional:-->\r
+         <tem:PhoneNumber>?</tem:PhoneNumber>\r
+         <!--Optional:-->\r
+         <tem:EntityFaxNumber>?</tem:EntityFaxNumber>\r
+         <!--Optional:-->\r
+         <tem:EntityEmailAddress>?</tem:EntityEmailAddress>\r
+         <!--Optional:-->\r
+         <tem:OrganizationIdentifier>?</tem:OrganizationIdentifier>\r
+         <!--Optional:-->\r
+         <tem:OrganizationDescription>?</tem:OrganizationDescription>\r
+         <!--Optional:-->\r
+         <tem:BusinessDescription>?</tem:BusinessDescription>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearStart>?</tem:FiscalYearStart>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearEnd>?</tem:FiscalYearEnd>\r
+         <!--Optional:-->\r
+         <tem:OrganizationBuildingNumber>?</tem:OrganizationBuildingNumber>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressStreet>?</tem:OrganizationAddressStreet>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressStreet2>?</tem:OrganizationAddressStreet2>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressCity>?</tem:OrganizationAddressCity>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressZipOrPostalCode>?</tem:OrganizationAddressZipOrPostalCode>\r
+         <!--Optional:-->\r
+         <tem:OrganizationAddressCountry>?</tem:OrganizationAddressCountry>\r
+         <!--Optional:-->\r
+         <tem:WebSiteURL>?</tem:WebSiteURL>\r
+      </tem:SendEntityInformation>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendEntityInformation"/></con:call></con:operation><con:operation id="d8145240-528e-4c18-b4be-5a651e93a560" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerDataByList" name="SendLedgerDataByList" bindingOperationName="SendLedgerDataByList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9c9f3d5f-149d-4776-97d9-ee131ff758fd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerDataByList>\r
+         <!--Optional:-->\r
+         <tem:header>\r
+            <!--Zero or more repetitions:-->\r
+            <isis:AccountHeader>\r
+               <!--Optional:-->\r
+               <isis:h01>?</isis:h01>\r
+               <!--Optional:-->\r
+               <isis:h02>?</isis:h02>\r
+               <!--Optional:-->\r
+               <isis:h03>?</isis:h03>\r
+               <!--Optional:-->\r
+               <isis:h04>?</isis:h04>\r
+               <!--Optional:-->\r
+               <isis:h05>?</isis:h05>\r
+               <!--Optional:-->\r
+               <isis:h06>?</isis:h06>\r
+               <!--Optional:-->\r
+               <isis:h07>?</isis:h07>\r
+               <!--Optional:-->\r
+               <isis:h08>?</isis:h08>\r
+               <!--Optional:-->\r
+               <isis:h09>?</isis:h09>\r
+               <!--Optional:-->\r
+               <isis:h10>?</isis:h10>\r
+               <!--Optional:-->\r
+               <isis:h11>?</isis:h11>\r
+               <!--Optional:-->\r
+               <isis:h12>?</isis:h12>\r
+               <!--Optional:-->\r
+               <isis:h13>?</isis:h13>\r
+               <!--Optional:-->\r
+               <isis:h14>?</isis:h14>\r
+               <!--Optional:-->\r
+               <isis:h15>?</isis:h15>\r
+               <!--Optional:-->\r
+               <isis:h16>?</isis:h16>\r
+               <!--Optional:-->\r
+               <isis:h17>?</isis:h17>\r
+               <!--Optional:-->\r
+               <isis:h18>?</isis:h18>\r
+               <!--Optional:-->\r
+               <isis:h19>?</isis:h19>\r
+               <!--Optional:-->\r
+               <isis:h20>?</isis:h20>\r
+               <!--Optional:-->\r
+               <isis:h21>?</isis:h21>\r
+               <!--Optional:-->\r
+               <isis:h22>?</isis:h22>\r
+               <!--Optional:-->\r
+               <isis:h23>?</isis:h23>\r
+               <!--Optional:-->\r
+               <isis:h24>?</isis:h24>\r
+               <!--Optional:-->\r
+               <isis:h25>?</isis:h25>\r
+               <!--Optional:-->\r
+               <isis:h26>?</isis:h26>\r
+               <!--Optional:-->\r
+               <isis:h27>?</isis:h27>\r
+               <!--Optional:-->\r
+               <isis:h28>?</isis:h28>\r
+               <!--Optional:-->\r
+               <isis:h29>?</isis:h29>\r
+               <!--Optional:-->\r
+               <isis:h30>?</isis:h30>\r
+               <!--Optional:-->\r
+               <isis:recordPeriod>?</isis:recordPeriod>\r
+            </isis:AccountHeader>\r
+         </tem:header>\r
+         <!--Optional:-->\r
+         <tem:detail>\r
+            <!--Zero or more repetitions:-->\r
+            <isis:AccountDetail>\r
+               <!--Optional:-->\r
+               <isis:d01>?</isis:d01>\r
+               <!--Optional:-->\r
+               <isis:d02>?</isis:d02>\r
+               <!--Optional:-->\r
+               <isis:d03>?</isis:d03>\r
+               <!--Optional:-->\r
+               <isis:d04>?</isis:d04>\r
+               <!--Optional:-->\r
+               <isis:d05>?</isis:d05>\r
+               <!--Optional:-->\r
+               <isis:d06>?</isis:d06>\r
+               <!--Optional:-->\r
+               <isis:d07>?</isis:d07>\r
+               <!--Optional:-->\r
+               <isis:d08>?</isis:d08>\r
+               <!--Optional:-->\r
+               <isis:d09>?</isis:d09>\r
+               <!--Optional:-->\r
+               <isis:d10>?</isis:d10>\r
+               <!--Optional:-->\r
+               <isis:d11>?</isis:d11>\r
+               <!--Optional:-->\r
+               <isis:d12>?</isis:d12>\r
+               <!--Optional:-->\r
+               <isis:d13>?</isis:d13>\r
+               <!--Optional:-->\r
+               <isis:d14>?</isis:d14>\r
+               <!--Optional:-->\r
+               <isis:d15>?</isis:d15>\r
+               <!--Optional:-->\r
+               <isis:d16>?</isis:d16>\r
+               <!--Optional:-->\r
+               <isis:d17>?</isis:d17>\r
+               <!--Optional:-->\r
+               <isis:d18>?</isis:d18>\r
+               <!--Optional:-->\r
+               <isis:d19>?</isis:d19>\r
+               <!--Optional:-->\r
+               <isis:d20>?</isis:d20>\r
+               <!--Optional:-->\r
+               <isis:d21>?</isis:d21>\r
+               <!--Optional:-->\r
+               <isis:d22>?</isis:d22>\r
+               <!--Optional:-->\r
+               <isis:d23>?</isis:d23>\r
+               <!--Optional:-->\r
+               <isis:d24>?</isis:d24>\r
+               <!--Optional:-->\r
+               <isis:d25>?</isis:d25>\r
+               <!--Optional:-->\r
+               <isis:d26>?</isis:d26>\r
+               <!--Optional:-->\r
+               <isis:d27>?</isis:d27>\r
+               <!--Optional:-->\r
+               <isis:d28>?</isis:d28>\r
+               <!--Optional:-->\r
+               <isis:d29>?</isis:d29>\r
+               <!--Optional:-->\r
+               <isis:d30>?</isis:d30>\r
+               <!--Optional:-->\r
+               <isis:d31>?</isis:d31>\r
+               <!--Optional:-->\r
+               <isis:d32>?</isis:d32>\r
+               <!--Optional:-->\r
+               <isis:d33>?</isis:d33>\r
+               <!--Optional:-->\r
+               <isis:d34>?</isis:d34>\r
+               <!--Optional:-->\r
+               <isis:d35>?</isis:d35>\r
+               <!--Optional:-->\r
+               <isis:d36>?</isis:d36>\r
+               <!--Optional:-->\r
+               <isis:d37>?</isis:d37>\r
+               <!--Optional:-->\r
+               <isis:d38>?</isis:d38>\r
+               <!--Optional:-->\r
+               <isis:d39>?</isis:d39>\r
+               <!--Optional:-->\r
+               <isis:d40>?</isis:d40>\r
+               <!--Optional:-->\r
+               <isis:documentDate>?</isis:documentDate>\r
+               <!--Optional:-->\r
+               <isis:recordperiod>?</isis:recordperiod>\r
+            </isis:AccountDetail>\r
+         </tem:detail>\r
+         <!--Optional:-->\r
+         <tem:Period>?</tem:Period>\r
+         <!--Optional:-->\r
+         <tem:PacketCounter>?</tem:PacketCounter>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+      </tem:SendLedgerDataByList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerDataByList"/></con:call></con:operation><con:operation id="cac7ae68-1eb3-460d-a35b-17b696626cc9" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerDataByXML" name="SendLedgerDataByXML" bindingOperationName="SendLedgerDataByXML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="03941848-b4fb-4d6a-9183-9f22482a9ce1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerDataByXML>\r
+         <!--Optional:-->\r
+         <tem:header>?</tem:header>\r
+         <!--Optional:-->\r
+         <tem:detail>?</tem:detail>\r
+         <!--Optional:-->\r
+         <tem:Period>?</tem:Period>\r
+         <!--Optional:-->\r
+         <tem:PacketCounter>?</tem:PacketCounter>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+      </tem:SendLedgerDataByXML>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerDataByXML"/></con:call></con:operation><con:operation id="6d1fd35c-b087-488a-b385-f2ffc20187ae" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerDataByZip" name="SendLedgerDataByZip" bindingOperationName="SendLedgerDataByZip" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6e7ae18c-fe61-4480-ac05-f82f0b605f0b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://edefter.isisbilisim.com.tr/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerDataByZip>\r
+         <!--Optional:-->\r
+         <tem:header>cid:72626060121</tem:header>\r
+         <!--Optional:-->\r
+         <tem:detail>cid:845615254036</tem:detail>\r
+         <!--Optional:-->\r
+         <tem:Period>?</tem:Period>\r
+         <!--Optional:-->\r
+         <tem:PacketCounter>?</tem:PacketCounter>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+      </tem:SendLedgerDataByZip>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerDataByZip"/></con:call></con:operation><con:operation id="77884a43-f578-45a5-8095-f3a1601012eb" isOneWay="false" action="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord" name="SendLedgerPeriodControlRecord" bindingOperationName="SendLedgerPeriodControlRecord" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6f8db58b-2e64-4280-ab65-486999cd8e93" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:60443/servicesERP/ELedgerService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:isis="http://schemas.datacontract.org/2004/07/ISIS.Portal.ServicesERP">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SendLedgerPeriodControlRecord>\r
+         <!--Optional:-->\r
+         <tem:VKN>9860025813</tem:VKN>\r
+         <!--Optional:-->\r
+         <tem:RecordPeriod>?</tem:RecordPeriod>\r
+         <!--Optional:-->\r
+         <tem:PeriodCoveredStart>?</tem:PeriodCoveredStart>\r
+         <!--Optional:-->\r
+         <tem:PeriodCoveredEnd>?</tem:PeriodCoveredEnd>\r
+         <!--Optional:-->\r
+         <tem:EntryCount>?</tem:EntryCount>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearStart>?</tem:FiscalYearStart>\r
+         <!--Optional:-->\r
+         <tem:FiscalYearEnd>?</tem:FiscalYearEnd>\r
+         <!--Optional:-->\r
+         <tem:DebitSum>?</tem:DebitSum>\r
+         <!--Optional:-->\r
+         <tem:CreditSum>?</tem:CreditSum>\r
+         <!--Optional:-->\r
+         <tem:PeriodClosed>?</tem:PeriodClosed>\r
+         <!--Optional:-->\r
+         <tem:isTest>?</tem:isTest>\r
+         <!--Optional:-->\r
+         <tem:ControlType>?</tem:ControlType>\r
+         <!--Optional:-->\r
+         <tem:SapReturnTable>\r
+            <!--Optional:-->\r
+            <isis:Messages>\r
+               <!--Zero or more repetitions:-->\r
+               <isis:ELedgerService.MessageTableType>\r
+                  <!--Optional:-->\r
+                  <isis:MesageType>?</isis:MesageType>\r
+                  <!--Optional:-->\r
+                  <isis:Message>?</isis:Message>\r
+                  <!--Optional:-->\r
+                  <isis:MessageID>?</isis:MessageID>\r
+               </isis:ELedgerService.MessageTableType>\r
+            </isis:Messages>\r
+            <!--Optional:-->\r
+            <isis:SesionID>?</isis:SesionID>\r
+         </tem:SapReturnTable>\r
+         <!--Optional:-->\r
+         <tem:EnteredBeginDate>?</tem:EnteredBeginDate>\r
+         <!--Optional:-->\r
+         <tem:EnteredEndDate>?</tem:EnteredEndDate>\r
+      </tem:SendLedgerPeriodControlRecord>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>9860025813</con:username><con:password>9860025813</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IELedgerService/SendLedgerPeriodControlRecord"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
